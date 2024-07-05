@@ -6,7 +6,7 @@ short width = 01; //6-bit value
 char parity_bit; //even parity
 unsigned char Tx_data = 'A';
 configure_baudrate(baud, clock);
-configure_data_width(01);
+configure_data_width(0x01);
 char stopbit = configure_stop_bit(1); //set as 1 stating either 1.5 or 2 stop bits 
 char parity = configure_parity(1);
 transmit_data(Tx_data);
